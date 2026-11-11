@@ -23,7 +23,7 @@ Dans `data/top-voice.json`, ajoute un bloc dans `membres` :
 ```json
 {
   "nom": "Prénom Nom",
-  "categorie": "CIF indépendant",
+  "categorie": "CGP",
   "description": "Une phrase sur son approche et ses clients types.",
   "episode": "https://lien-vers-son-episode",
   "site": "https://son-site.fr",
@@ -32,7 +32,7 @@ Dans `data/top-voice.json`, ajoute un bloc dans `membres` :
 }
 ```
 
-`categorie` vaut exactement `Coach financier`, `CGP` ou `CIF indépendant`. `actif_jusqu_a` affiche « Partenaire actif jusqu'en … » sur sa fiche. La photo est facultative : dépose-la dans `assets/top-voice/`. Sans photo, ses initiales s'affichent.
+`categorie` vaut exactement `Coach financier` ou `CGP`. `actif_jusqu_a` affiche « Partenaire actif jusqu'en … » sur sa fiche. La photo est facultative : dépose-la dans `assets/top-voice/`. Sans photo, ses initiales s'affichent.
 
 ## Les épisodes
 

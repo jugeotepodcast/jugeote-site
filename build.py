@@ -22,7 +22,7 @@ SITE = 'https://www.jugeote.fr'
 RSS = 'https://feeds.podcastics.com/podcastics/podcasts/rss/5923_c0971b47dc884a3018a618a101714dd0.rss'
 LIEN_PODCAST = 'https://www.podcastics.com/podcast/5923/link/'
 MOIS = ['janv.', 'févr.', 'mars', 'avr.', 'mai', 'juin', 'juil.', 'août', 'sept.', 'oct.', 'nov.', 'déc.']
-CATEGORIES = ['Coach financier', 'CGP', 'CIF indépendant']
+CATEGORIES = ['Coach financier', 'CGP']
 
 
 def e(texte):
