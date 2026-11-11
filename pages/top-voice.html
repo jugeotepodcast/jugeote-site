@@ -1,0 +1,56 @@
+<!--
+TITRE: Les Top Voice Jugeote
+DESCRIPTION: Les Top Voice sont des invités choisis par David, et qui soutiennent financièrement Jugeote. Coachs, CGP et CIF indépendants pour chaque niveau de patrimoine.
+CHEMIN: top-voice.html
+-->
+<section class="conteneur bandeau-page">
+<p class="surtitre">Promotion 2026-2027</p>
+<h1>Les Top Voice Jugeote</h1>
+<p>Les Top Voice sont des invités choisis par David, et qui soutiennent financièrement Jugeote.</p>
+</section>
+</header>
+
+<main id="contenu">
+<section class="conteneur trois-points">
+<div class="point">
+<strong>30 sur 150</strong>
+<p>Sur les quelque 150 invités passés au micro, une trentaine ont été retenus selon les critères de David. Ensuite seulement, chacun choisit de rejoindre le collectif.</p>
+</div>
+<div class="point">
+<strong>Tous les profils</strong>
+<p>Coachs et formateurs pour démarrer, CGP pour structurer un patrimoine, CIF 100 % indépendants à honoraires pour les patrimoines plus importants.</p>
+</div>
+<div class="point">
+<strong>Vous choisissez</strong>
+<p>Jugeote ne vous attribue aucun conseiller. Écoutez leurs épisodes et contactez celui ou celle dont l'approche vous parle.</p>
+</div>
+</section>
+
+<section class="conteneur section">
+<div class="entete-section">
+<div><h2 class="titre-section" style="font-size: 38px">Le collectif</h2></div>
+{{TOP_VOICE_FILTRES}}
+</div>
+{{TOP_VOICE_MEMBRES}}
+</section>
+
+<section class="bloc-lavande">
+<div class="conteneur section texte-long">
+<h2 class="titre-section" style="font-size: 30px">Transparence</h2>
+<p>Les Top Voice versent une contribution annuelle à Jugeote. Elle ne leur achète ni leur sélection ni le contenu de leurs épisodes, qui restent des épisodes éditoriaux comme les autres.</p>
+</div>
+</section>
+</main>
+
+<script>
+// Filtre par profil : affiche seulement les cartes de la catégorie choisie
+document.querySelectorAll('.filtres button').forEach(function (b) {
+  b.addEventListener('click', function () {
+    var cat = b.dataset.cat;
+    document.querySelectorAll('.filtres button').forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+    document.querySelectorAll('[data-categorie]').forEach(function (c) {
+      c.hidden = !(cat === 'Tous' || c.dataset.categorie === cat);
+    });
+  });
+});
+</script>
