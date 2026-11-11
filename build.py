@@ -22,7 +22,7 @@ SITE = 'https://www.jugeote.fr'
 RSS = 'https://feeds.podcastics.com/podcastics/podcasts/rss/5923_c0971b47dc884a3018a618a101714dd0.rss'
 LIEN_PODCAST = 'https://www.podcastics.com/podcast/5923/link/'
 MOIS = ['janv.', 'févr.', 'mars', 'avr.', 'mai', 'juin', 'juil.', 'août', 'sept.', 'oct.', 'nov.', 'déc.']
-CATEGORIES = ['Coach / formateur', 'CGP', 'CIF indépendant']
+CATEGORIES = ['Coach financier', 'CGP', 'CIF indépendant']
 
 
 def e(texte):
@@ -113,10 +113,11 @@ def top_voice():
             liens += f'<a class="lien-fort" href="{e(m["episode"])}">Son épisode</a>'
         if m.get('site'):
             liens += f'<a class="lien-fort" href="{e(m["site"])}">Son site</a>'
+        actif = f'<p class="actif">Partenaire actif jusqu\'en {e(m["actif_jusqu_a"])}</p>\n' if m.get('actif_jusqu_a') else ''
         cartes.append(
             f'<article class="carte" data-categorie="{e(m.get("categorie", ""))}">\n{visuel}\n'
             f'<h3>{e(nom)}</h3>\n<span class="categorie">{e(m.get("categorie", ""))}</span>\n'
-            f'<p>{e(m.get("description", ""))}</p>\n<div class="liens-carte">{liens}</div>\n</article>')
+            f'<p>{e(m.get("description", ""))}</p>\n{actif}<div class="liens-carte">{liens}</div>\n</article>')
     return filtres, '<div class="grille">\n' + '\n'.join(cartes) + '\n</div>'
 
 

@@ -27,11 +27,12 @@ Dans `data/top-voice.json`, ajoute un bloc dans `membres` :
   "description": "Une phrase sur son approche et ses clients types.",
   "episode": "https://lien-vers-son-episode",
   "site": "https://son-site.fr",
+  "actif_jusqu_a": "novembre 2027",
   "photo": "prenom-nom.jpg"
 }
 ```
 
-`categorie` vaut exactement `Coach / formateur`, `CGP` ou `CIF indépendant`. La photo est facultative : dépose-la dans `assets/top-voice/`. Sans photo, ses initiales s'affichent.
+`categorie` vaut exactement `Coach financier`, `CGP` ou `CIF indépendant`. `actif_jusqu_a` affiche « Partenaire actif jusqu'en … » sur sa fiche. La photo est facultative : dépose-la dans `assets/top-voice/`. Sans photo, ses initiales s'affichent.
 
 ## Les épisodes
 

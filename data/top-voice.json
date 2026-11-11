@@ -1,5 +1,5 @@
 {
-  "_mode_d_emploi": "Un bloc par Top Voice. categorie doit valoir exactement : Coach / formateur, CGP ou CIF indépendant. photo est facultative (mettre le fichier dans assets/top-voice/ et indiquer son nom). Laisser la liste vide affiche le message d'attente.",
+  "_mode_d_emploi": "Un bloc par Top Voice. categorie doit valoir exactement : Coach financier, CGP ou CIF indépendant. actif_jusqu_a (ex. \"novembre 2027\") affiche la mention partenaire actif. photo est facultative (mettre le fichier dans assets/top-voice/ et indiquer son nom). Laisser la liste vide affiche le message d'attente.",
   "message_attente": "Les premiers Top Voice de la promotion 2026-2027 seront présentés ici en décembre 2026.",
   "membres": []
 }

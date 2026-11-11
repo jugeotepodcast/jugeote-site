@@ -155,3 +155,10 @@ h1, h2, h3 { font-family: var(--titres); font-weight: 600; margin: 0; }
   .hero-visuel img { width: 260px; height: 260px; }
   .grille { grid-template-columns: 1fr; }
 }
+
+/* Critères de sélection Top Voice */
+.criteres { margin: 0; padding-left: 24px; display: flex; flex-direction: column; gap: 18px; max-width: 860px; }
+.criteres li { font-size: 17px; line-height: 1.65; color: #3b3558; padding-left: 6px; }
+.criteres li::marker { font-family: var(--titres); font-weight: 600; color: var(--violet-fonce); }
+.criteres strong { color: var(--bleu); }
+.carte p.actif { font-size: 13px; font-weight: 600; color: var(--violet-fonce); }
